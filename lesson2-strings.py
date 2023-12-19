@@ -37,6 +37,10 @@ name_company3 = "{0} works at {1}".format(name, company)
 # Up to 4th character (Code)
 # print(company[:4])
 
+# print(company[5])
+#
+# print(company[-5])
+
 # up to 4th character from the end
 # print(company[:-4])
 
@@ -45,4 +49,28 @@ name_company3 = "{0} works at {1}".format(name, company)
 
 # two slices with one print
 # print(f"{company[2:5]} {company[12:20]}")
+
+words = company.split()
+#
+# print(words)
+#
+# print(company.upper())
+#
+# print(company.casefold())
+#
+# print("Šalta".lower())
+#
+# print(company.replace("e", "E", 2).replace("d", "D"))
+
+# if we need to have quotes inside
+sentence = 'he said "your dog is nice"'
+
+# if we need an apostrophe inside single quotes, we can escape it with \
+sentence2 = 'let\'s eat'
+sentence4 = "let's eat"
+print(sentence2)
+print(sentence4)
+
+sentence3 = 'he said "let\'s eat"'
+print(sentence3)
 

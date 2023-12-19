@@ -60,7 +60,14 @@ words = company.split()
 #
 # print("Šalta".lower())
 #
-# print(company.replace("e", "E", 2).replace("d", "D"))
+print(company.replace("e", "E", 2).replace("d", "D"))
+
+company = company.replace("a", "4")
+company = company.replace("b", "8")
+company = company.replace("c", "<")
+company = company.replace("d", "|)")
+
+print(company)
 
 # if we need to have quotes inside
 sentence = 'he said "your dog is nice"'
@@ -74,3 +81,4 @@ print(sentence4)
 sentence3 = 'he said "let\'s eat"'
 print(sentence3)
 
+print(len(sentence3))

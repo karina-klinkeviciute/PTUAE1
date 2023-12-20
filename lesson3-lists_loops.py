@@ -17,3 +17,6 @@ for item in list2:
 print(list)
 
 print(8 in list)
+
+list_of_one = [5]
+

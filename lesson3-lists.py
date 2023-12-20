@@ -85,6 +85,8 @@ print(integer_list[::-1])
 
 print(max(integer_list))
 
+
+
 print(min(integer_list))
 
 print(min(string_list))
@@ -97,3 +99,4 @@ print(integer_list)
 
 print(sorted(string_list))
 
+print(sum(integer_list))

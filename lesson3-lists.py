@@ -31,3 +31,18 @@ print(removed_item)
 print(my_list.count(2))
 
 print(string_list.count("good"))
+
+new_list = string_list + my_list
+
+print(new_list)
+
+my_list.extend(various)
+
+print(my_list)
+
+my_list.append(string_list)
+
+print(my_list)
+
+print(my_list[13][2])
+

@@ -2,7 +2,7 @@ from pprint import pprint
 
 my_list = [1, 2, 4, 9, 15, 2, 2, 2, 2]
 
-string_list = ["good", "day", "we", "are", "learning", "good"]
+string_list = ["good", "day", "we", "are", "learning", "good", "leak", "šalta", "uodas"]
 
 # we can have a list of different types variables
 various = ["hi", 1, 5, "code", "academy"]
@@ -61,4 +61,39 @@ print(my_list)
 print(my_list[13][2])
 
 pprint(my_list)
+
+list_length = len(my_list)
+
+print(list_length)
+
+print(len(various))
+
+print(len(string_list))
+
+integer_list = [1, 2, 4, 9, 15, 2, 2, 2, 2]
+
+integer_list[2] = 5
+
+print(integer_list)
+
+print(integer_list[:5])
+print(integer_list[5:])
+
+print(integer_list[::2])
+print(integer_list[-1])
+print(integer_list[::-1])
+
+print(max(integer_list))
+
+print(min(integer_list))
+
+print(min(string_list))
+
+print(max(string_list))
+
+integer_list.sort()
+
+print(integer_list)
+
+print(sorted(string_list))
 

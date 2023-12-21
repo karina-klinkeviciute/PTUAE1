@@ -23,8 +23,6 @@ print(my_dictionary["occupation"]["role"])
 
 languages = my_dictionary["languages"]
 
-
-
 print(languages)
 
 # value form a list inside a dictionary

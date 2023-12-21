@@ -82,3 +82,12 @@ sentence3 = 'he said "let\'s eat"'
 print(sentence3)
 
 print(len(sentence3))
+
+a = 15
+
+print(a)
+
+a = 19
+
+print(a)
+

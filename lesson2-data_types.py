@@ -26,3 +26,6 @@ i = a ** b
 #
 # print(c, d, e, f)
 
+a = [3, 1, 2, 3, 4, 5, 3]
+
+print(a.index(3))

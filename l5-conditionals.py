@@ -11,6 +11,8 @@ number2 = int(input("enter number2 "))
 
 year = int(input("enter year of birth: "))
 
+
+# lots of elif
 if year >= 2010:
     print("generation Alpha")
 elif year >= 1997:
@@ -26,12 +28,14 @@ elif year >= 1928:
 else:
     print("some earlier generation")
 
+# shorter if (though less readable
 print("number1 is bigger") if number1 > number2 else print("number2 is bigger") if number2 > number1 else print("they are equal")
 
 a = 200
 b = 300
 c = 100
 
+# checking two conditions
 if c > b and c > a:
     print("number c is larger than the other ones")
 

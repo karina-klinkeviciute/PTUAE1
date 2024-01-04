@@ -17,7 +17,7 @@
 # for key, value in my_dictionary.items():
 #     print(key, value)
 
-x = range(200, 100, -11)
+x = range(100, 200, 12)
 
 for item in x:
     print(item)

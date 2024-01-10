@@ -1,11 +1,15 @@
-def are_adults(**kwargs):
-    for key, value in kwargs.items():
-        print(key, value)
+def are_adults(reason, **kwargs):
+    print(reason)
+    for name, age in kwargs.items():
+        # print(key, value)
+        if age < 18:
+            return False
+    return True
 
 
-print(are_adults(jonas=25, tadas=15, lina=36))
+print(are_adults("night club", jonas=25, tadas=15, lina=36))
 
-print(are_adults(petras=15, dovydas=21))
+print(are_adults("sell cigarettes", petras=19, dovydas=21))
 
 # def integer_division(num_one=10, num_two=2):
 #     return num_one // num_two

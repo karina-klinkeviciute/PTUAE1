@@ -32,12 +32,15 @@ import random
 #     print(i)
 
 
-for i in range(20):
-    if i == 13:
-        continue  # continue with the next iteration
-    print(i)
-    print("something")
-    a = 1
+# for i in range(20):
+#     if i == 13:
+#         continue  # continue with the next iteration
+#     print(i)
+#     print("something")
+#     a = 1
+#
+# random.randint(1, 100)
 
-random.randint(1, 100)
-
+x = range(10, 1, -1)
+for number in x:
+    print(number)

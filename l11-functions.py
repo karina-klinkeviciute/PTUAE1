@@ -1,7 +1,8 @@
 def check_integers(name, *args):
-
+    """check if all names are integers. If so, return True. Otherwise return False"""
     print(name)
     for item in args:
+        # check the type if an item, and comper to an item we know is an integer
         if type(item) != type(1):
             return False
 

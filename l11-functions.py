@@ -8,6 +8,7 @@ def check_integers(name, *args):
 
     return True
 
+
 print(check_integers("Petras", 1, 2, 3))
 
 print(check_integers("p", "o", "i", 1, 5, 9))

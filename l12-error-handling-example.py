@@ -1,6 +1,6 @@
 from typing import Union
 
-
+# print(some_variable)
 def my_dummy_int_func(a: Union[str, float]) -> None:
     try:
         int_value = int(a)

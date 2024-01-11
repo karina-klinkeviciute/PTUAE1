@@ -7,11 +7,22 @@ for index, item in enumerate(list1):
     try:
         result = item/list2[index]
 
-    except ZeroDivisionError:
-        result = "infinity"
+    except ZeroDivisionError as exc:
+        print(exc.args[0])
     except TypeError:
-        result = "cant divide int by string"
+        print("cant divide int by string")
     except IndexError:
-        result = "too many items"
-    print(result)
+        print("too many items")
+    else:
+        print(result)
+
+
+# for index, item in enumerate(list1):
+#     try:
+#         result = item/list2[index]
+#
+#     except (ZeroDivisionError, TypeError, IndexError) as exc:
+#         result = exc.args
+#
+#     print(result)
 

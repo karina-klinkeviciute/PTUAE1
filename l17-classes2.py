@@ -25,3 +25,22 @@ account1.receive_money(5000)
 account1.withdraw(10)
 
 account2.withdraw(50)
+
+class WrongGender(Exception):
+    pass
+class Animal:
+    def __init__(self, gender):
+        self.gender = gender
+
+    def set_gender(self, gender):
+        if (gender != "male") and (gender != "female"):
+            raise WrongGender("it has to be either male or female")
+        else:
+            self.gender = gender
+
+my_dog = Animal("male")
+
+print(my_dog.gender)
+
+my_dog.set_gender("female")
+

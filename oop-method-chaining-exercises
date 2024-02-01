@@ -1,0 +1,11 @@
+1. calculator
+
+Create a calculator that would have an __init__ method, in which it would set an initial value (default - 0).
+It should also have methods for adding, subtracting, dividing amd multiplication.
+
+All methods should be available to chain. The result of each calculation could be used in the second one.
+
+The calculation could look like this:
+
+result = Calculator(10).add(5).multiply(2).subtract(3).divide(2).value
+print(result)

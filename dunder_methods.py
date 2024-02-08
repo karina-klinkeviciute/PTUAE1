@@ -61,13 +61,56 @@ print(5 + vector1)
 
 
 class Train:
-    def __init__(self, wagons):
+    def __init__(self, engine: bool, wagons: int):
         self.wagons = wagons
+        self.engine = engine
 
     def __len__(self):
-        return self.wagons
+        if self.engine:
+            engine_count = 1
+        else:
+            engine_count = 0
+        return self.wagons + engine_count
 
-train = Train(5)
+    def __bool__(self):
+        return bool(self.wagons) and self.engine
+
+    def __getitem__(self, key):
+        if key == 1 and self.engine:
+            return "engine"
+        elif key == 1 and not self.engine and self.wagons > 0:
+            return "wagon"
+        elif key > 1 and key <= self.__len__():
+            return "wagon"
+        else:
+            return "nothing"
+
+
+
+train = Train(True, 5)
+print(train[1])
+
 
 print(len(train))
 
+print(bool(train))
+# print(bool(1))
+#
+# print(bool(""))
+
+
+len("hello")
+
+
+class MyDict(dict):
+    def __missing__(self, key: str):
+        return 'default'
+
+
+md = MyDict({'a': 1, 'b': 2})
+print(md['a'])  # 1
+print(md['c'])  # default
+
+dictionary = {"a": 1, "b": 2}
+
+print(type(dictionary))

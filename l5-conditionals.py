@@ -43,6 +43,7 @@
 #     print("number c is larger then at least on of other numbers")
 # else:
 #     print("number c is not larger then at least on of other numbers")
+import pdb
 
 # x = 35
 #
@@ -58,6 +59,7 @@
 name = input("tell me your name: ")
 
 if name == "Tom":
+    pdb.set_trace()
     print("Hi, Tom")
 else:
     print("good bye")

@@ -1,16 +1,22 @@
-i = 1
+import logging, logging.config
 
-while i < 20:
-    print(i)
-    i *= 2
+# set up logging
+logging.config.fileConfig("logging.conf")
+logger = logging.getLogger("sLogger")
 
+# i = 1
+#
+# while i < 20:
+#     print(i)
+#     i *= 2
+#
 # while True:
 #     print("hello")
 #     print(i)
-# i += 1
-# if i > 10000:
-#     break
-
+#     i += 1
+#     if i > 10000:
+#         break
+#
 # while True:
 #     user_input = input("Enter your name: ")
 #     if len(user_input) != 0:
@@ -21,7 +27,9 @@ while i < 20:
 while True:
     secret = "secret"
     user_input = input("Enter the secret: ")
+    logger.info(f"user entered: {user_input}")
     if user_input == secret:
+        logger.info(f"user entered: {user_input} and got in")
         print("You're in!")
         break
     else:

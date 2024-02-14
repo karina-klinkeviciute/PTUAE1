@@ -2,6 +2,7 @@
 #
 # for name in names:
 #     print(f"Hello, {name}")
+import pdb
 import random
 
 # name = "Code Academy"
@@ -23,13 +24,14 @@ import random
 # for item in x:
 #     print(item)
 
-# i = 1
-# while i < 20:
-#     i += 1
-#     if i == 13:
-#         print("no 13")
-#         continue
-#     print(i)
+i = 1
+while i < 20:
+    # pdb.set_trace()
+    i += 1
+    if i > int("13"):
+        print("more than 13")
+        continue
+    print(i)
 
 
 # for i in range(20):

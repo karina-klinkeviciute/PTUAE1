@@ -26,8 +26,11 @@ account1.withdraw(10)
 
 account2.withdraw(50)
 
+
 class WrongGender(Exception):
     pass
+
+
 class Animal:
     def __init__(self, gender):
         self.gender = gender
@@ -38,9 +41,9 @@ class Animal:
         else:
             self.gender = gender
 
+
 my_dog = Animal("male")
 
 print(my_dog.gender)
 
 my_dog.set_gender("female")
-

@@ -86,7 +86,6 @@ print(integer_list[::-1])
 print(max(integer_list))
 
 
-
 print(min(integer_list))
 
 print(min(string_list))

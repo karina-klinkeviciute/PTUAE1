@@ -10,7 +10,12 @@
 #
 # print(sorted(my_dictionary.items()))
 #
-names_list = ["Albert", "Niels", "Nicola", "Thomas", ]
+names_list = [
+    "Albert",
+    "Niels",
+    "Nicola",
+    "Thomas",
+]
 
 print(*names_list, sep="|")
 

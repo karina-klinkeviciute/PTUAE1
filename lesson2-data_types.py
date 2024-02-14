@@ -13,7 +13,7 @@ g = a // b
 
 h = a % b
 
-i = a ** b
+i = a**b
 
 
 # print(c)

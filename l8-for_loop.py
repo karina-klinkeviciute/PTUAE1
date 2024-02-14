@@ -39,7 +39,7 @@ import random
 #     print("something")
 #     a = 1
 #
-# random.randint(1, 100)
+random.randint(1, 100)
 
 x = range(10, 1, -1)
 for number in x:

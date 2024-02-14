@@ -10,10 +10,10 @@ class Rectangle:
     def show_colour(self):
         print(self._colour)
 
+
 class Square(Rectangle):
     def __init__(self, size, colour):
         super().__init__(size, size, colour)
-
 
 
 rectangle = Rectangle(5, 6, "blue")

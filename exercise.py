@@ -9,7 +9,7 @@ character_counts = {}
 for sentence in sentences:
     for character in sentence:
         # character_counts[character] = character_counts.get(character, 0) + 1
-# print(character_counts)
+        # print(character_counts)
 
         if character in character_counts.keys():
             character_counts[character] += 1

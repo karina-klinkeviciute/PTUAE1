@@ -2,16 +2,22 @@ class A:
     def foo(self):
         print("A.foo")
 
+
 class B(A):
     def foo(self):
         print("B.foo")
+
     # pass
+
+
 class C(A):
     def foo(self):
         print("C.foo")
 
+
 class D(B, C):
     pass
+
 
 d = D()
 

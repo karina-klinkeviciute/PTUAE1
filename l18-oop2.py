@@ -17,12 +17,14 @@ class Engineer(Employee):
     def print_data(self):
         print(self.level)
 
+
 class Person:
     def __init__(self, hobbies):
         self.hobbies = hobbies
 
     def show_hobbies(self):
         print(self.hobbies)
+
 
 class Designer(Employee, Person):
     def __init__(self, name, age, experience, salary, position, hobbies):

@@ -73,7 +73,7 @@ print(company)
 sentence = 'he said "your dog is nice"'
 
 # if we need an apostrophe inside single quotes, we can escape it with \
-sentence2 = 'let\'s eat'
+sentence2 = "let's eat"
 sentence4 = "let's eat"
 print(sentence2)
 print(sentence4)
@@ -90,4 +90,3 @@ print(a)
 a = 19
 
 print(a)
-

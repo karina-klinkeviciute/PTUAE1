@@ -7,9 +7,9 @@ while i < 20:
 # while True:
 #     print("hello")
 #     print(i)
-    # i += 1
-    # if i > 10000:
-    #     break
+# i += 1
+# if i > 10000:
+#     break
 
 # while True:
 #     user_input = input("Enter your name: ")

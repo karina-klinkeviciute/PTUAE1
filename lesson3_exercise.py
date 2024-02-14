@@ -5,4 +5,3 @@ for i in my_list:
     list_sum = list_sum + i
 
 print(list_sum)
-

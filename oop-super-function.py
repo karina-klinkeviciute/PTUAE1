@@ -8,7 +8,7 @@ class Child(Parent):
         super().greet()
         print("Hello fron Child class")
 
+
 child = Child()
 
 child.greet()
-

@@ -19,6 +19,7 @@ class Person:
     def __str__(self):
         return f"{self.name}, {self.age}, {self.address}"
 
+
 person = Person()
 person.set_age(25).set_name("John").set_address("123 Main St")
 

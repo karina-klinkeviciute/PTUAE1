@@ -4,11 +4,15 @@ from pprint import pprint
 my_dictionary = {
     "name": "Albert",
     "surname": "Einstein",
-    "occupation": {
-        "role": "Professor",
-        "workplace": "University of Berlin"
-    },
-    "languages": ["German", "Latin", "Italian", "English", "French", {"something": "a value"}]
+    "occupation": {"role": "Professor", "workplace": "University of Berlin"},
+    "languages": [
+        "German",
+        "Latin",
+        "Italian",
+        "English",
+        "French",
+        {"something": "a value"},
+    ],
 }
 dictionary = {"a": 10, "b": 20, "c": 30}
 

@@ -4,6 +4,7 @@ a = str(5)
 
 print("hi" > "hello")
 
+
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -12,7 +13,11 @@ class Car:
 
     def __eq__(self, other):
         if isinstance(other, Car):
-            if self.make == other.make and self.model == other.model and self.year == other.year:
+            if (
+                self.make == other.make
+                and self.model == other.model
+                and self.year == other.year
+            ):
                 return True
         return False
 
@@ -28,6 +33,7 @@ else:
 
 "Hello" + "World"
 
+
 class Vector:
     def __init__(self, x: float, y: float):
         self.x = x
@@ -38,14 +44,16 @@ class Vector:
             return Vector(self.x + other.x, self.y + other.y)
         elif isinstance(other, int):
             return Vector(self.x + other, self.y + other)
-        raise TypeError(f"unsupported operand type(s) for +: 'Vector' and '{type(other).__name__}'")
+        raise TypeError(
+            f"unsupported operand type(s) for +: 'Vector' and '{type(other).__name__}'"
+        )
 
     def __radd__(self, other):
         return self.__add__(other)
 
-
     def __str__(self):
         return f"x: {self.x}, y: {self.y}"
+
 
 vector1 = Vector(5, 4)
 vector2 = Vector(3, -6)
@@ -55,9 +63,6 @@ print(vector1)
 print(vector2 + vector1)
 print(vector1 + 5)
 print(5 + vector1)
-
-
-
 
 
 class Train:
@@ -86,7 +91,6 @@ class Train:
             return "nothing"
 
 
-
 train = Train(True, 5)
 print(train[1])
 
@@ -104,12 +108,12 @@ len("hello")
 
 class MyDict(dict):
     def __missing__(self, key: str):
-        return 'default'
+        return "default"
 
 
-md = MyDict({'a': 1, 'b': 2})
-print(md['a'])  # 1
-print(md['c'])  # default
+md = MyDict({"a": 1, "b": 2})
+print(md["a"])  # 1
+print(md["c"])  # default
 
 dictionary = {"a": 1, "b": 2}
 

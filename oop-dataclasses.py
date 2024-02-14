@@ -15,9 +15,11 @@ class Person:
     email: str
     address: str = ""
 
+
 person = Person("John", 25, "john@example.com")
 
 print(person)
+
 
 @dataclass
 class Point:
@@ -25,9 +27,9 @@ class Point:
     y: float
 
     def distance_from_origin(self) -> float:
-        return (self.x ** 2 + self.y ** 2) ** 0.5
+        return (self.x**2 + self.y**2) ** 0.5
+
 
 point = Point(3, 4)
 
 print(point.distance_from_origin())
-

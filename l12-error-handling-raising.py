@@ -1,6 +1,7 @@
 class LenghtError(Exception):
     pass
 
+
 def enter_code():
     code = input("enter a two letter code:")
 
@@ -17,5 +18,3 @@ except ValueError:
     print("do something")
 except LenghtError as exc:
     print(exc.args)
-
-

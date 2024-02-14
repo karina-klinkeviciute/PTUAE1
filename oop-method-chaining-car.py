@@ -41,5 +41,18 @@ class Car:
         print(f"I am at {self.position_x} : {self.position_y}")
         return self
 
-car = Car().turn_left().go(50).turn_left().go(20).show_position().go(40).turn_right().go(80).show_position().go(50).turn_right()
 
+car = (
+    Car()
+    .turn_left()
+    .go(50)
+    .turn_left()
+    .go(20)
+    .show_position()
+    .go(40)
+    .turn_right()
+    .go(80)
+    .show_position()
+    .go(50)
+    .turn_right()
+)

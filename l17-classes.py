@@ -18,6 +18,7 @@ person2.age = 26
 
 print(person2.age)
 
+
 class House:
     city: str = "Kaunas"
 
@@ -40,6 +41,8 @@ class House:
             return f"the colour of the house is {self.colour}"
         else:
             return "blue"
+
+
 # print(House)
 
 house1 = House(100000, 12, "Jonas")
@@ -65,4 +68,3 @@ house2.colour = "white"
 print(house2.colour)
 
 print(house1.get_colour())
-

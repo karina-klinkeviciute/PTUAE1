@@ -24,18 +24,21 @@ class Cat(Animal):
     def make_sound(self):
         print("Meow")
 
+
 class DogCat(Dog, Cat):
     def __init__(self, name, breed, fur_color):
         Dog.__init__(self, name, breed)
         Cat.__init__(self, name, fur_color)
 
+
 print(DogCat.__mro__)
 
-dogcat = DogCat(name="DogKitty", breed = "Mixed", fur_color="Black")
+dogcat = DogCat(name="DogKitty", breed="Mixed", fur_color="Black")
 print(dogcat.name)
 print(dogcat.breed)
 print(dogcat.fur_color)
 dogcat.make_sound()
+
 
 class Animal:
     def __init__(self, name, number_of_legs=4):

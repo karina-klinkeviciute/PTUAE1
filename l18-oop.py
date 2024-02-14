@@ -24,4 +24,3 @@ print(employee._get_salary())
 # print(employee.__name)
 
 print(employee.get_name())
-

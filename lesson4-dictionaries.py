@@ -1,4 +1,12 @@
-my_dictionary = {"surname": "Klinkevičiūtė", "name": "Karina", 1: 15, (1, 2): 56, "age": 44, True: 15, "": "hi"}
+my_dictionary = {
+    "surname": "Klinkevičiūtė",
+    "name": "Karina",
+    1: 15,
+    (1, 2): 56,
+    "age": 44,
+    True: 15,
+    "": "hi",
+}
 
 print(my_dictionary["surname"])
 
@@ -19,4 +27,3 @@ my_dictionary["city"] = "Kaunas"
 print(my_dictionary)
 
 # print(my_dictionary[2])
-

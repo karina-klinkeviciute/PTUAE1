@@ -82,3 +82,6 @@ def my_function():
 result, _ = my_function()
 
 print(result)
+
+print(isinstance(5, int | float))
+

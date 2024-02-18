@@ -41,4 +41,3 @@ Combined Use of While and For Loops:
     ****
     *****    
 
-Remember to encourage students to experiment and modify the exercises to enhance their understanding. These exercises cover a range of loop scenarios and can help solidify their grasp on while and for loops in Python.

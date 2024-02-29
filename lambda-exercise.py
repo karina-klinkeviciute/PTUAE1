@@ -16,3 +16,11 @@ sorted_list = sorted(a_list, key=lambda x: x[1])
 
 print(sorted_list)
 
+print(list(map(lambda x: x * 3, [1, 2, 5, 6])))
+
+print(list(map(lambda x: x ** 2, [1, 2, 5, 6])))
+
+print(list(map(lambda a, b, c: a + b + c, [1, 2], [3, 4], [5, 6])))
+
+print(list(map(lambda a, b: (a - b), [1, 2], [3, 4])))
+

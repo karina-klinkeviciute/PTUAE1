@@ -1,4 +1,26 @@
 import logging, logging.config
+# from oop_from_material import Animal, DogCat
+
+from datetime import datetime
+
+from random import randint
+# import oop_from_material
+
+now = datetime.now()
+
+random_number = randint(1, 12)
+
+print(random_number)
+
+# from oop_from_material import *
+
+# animal = Animal("rabbit")
+
+# dogcat = DogCat("Fluffy", "mixed", "white")
+
+
+
+# import python_advanced_logging, python_advanced_logging.config
 
 # set up logging
 logging.config.fileConfig("logging.conf")

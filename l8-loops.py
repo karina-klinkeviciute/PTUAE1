@@ -1,4 +1,4 @@
-import logging, logging.config
+import python_advanced_logging, python_advanced_logging.config
 
 # set up logging
 logging.config.fileConfig("logging.conf")

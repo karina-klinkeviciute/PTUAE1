@@ -4,7 +4,7 @@ from datetime import datetime
 
 # print(dir(os))
 
-# current working directory
+# get current working directory
 print(os.getcwd())
 
 # changing the current working directory:
@@ -28,12 +28,13 @@ os.chdir("/home/karina/work/codeacademy/my_directory")
 # statistics about directory.file
 print(os.stat("new_directory"))
 
-# concrete information (size) anout directory/file
+# concrete information (size) about directory/file
 print(os.stat("new_directory").st_size)
 
 # last modified:
 modified_time = os.stat("new_directory").st_mtime
 
+# modified time formatted nicely
 modified_time = datetime.fromtimestamp(modified_time)
 
 print(modified_time)
@@ -45,10 +46,8 @@ file = open("my_file.txt", "w")
 # writing to the file
 file.write("hello world")
 
-file.close()
-
 # closing file
-# file.close()
+file.close()
 
 # working with files the recommended way
 
@@ -93,13 +92,13 @@ with open("my_file.txt", "r") as file:
 for line in lines:
     print(line)
 
+# printing all in one line
 for line in lines:
     print(line, end="")
 
 # reading line by line (one line at a time)
 with open("my_file.txt", "r") as file:
     print(file.readline())
-
     print(file.readline())
 
 # another way of reading line by line
@@ -107,7 +106,7 @@ with open("my_file.txt", "r") as file:
     for line in file:
         print(line)
 
-
+# copy from one file to another
 with open("my_file.txt", "r") as r_file:
     with open("new_file.txt", "w") as w_file:
         for line in r_file:
@@ -115,6 +114,7 @@ with open("my_file.txt", "r") as r_file:
 
 os.chdir("/home/karina/work/codeacademy")
 
+# working with binary files (images, executables etc)
 with open("bird-7866804_640.jpg", "rb") as r_file:
     with open("new_bird-7866804_640.jpg", "wb") as w_file:
         for line in r_file:

@@ -68,7 +68,10 @@ with open("my_file.txt", "r+") as file:
     print(text)
 
 with open("my_file.txt", "w") as file:
-    file.write("čia naujas tekstas")
+    file.write(""""čia 
+    
+    naujas tekstas"""
+               )
 
 with open("my_file.txt", "r") as file:
     text = file.read()
@@ -119,3 +122,5 @@ with open("bird-7866804_640.jpg", "rb") as r_file:
     with open("new_bird-7866804_640.jpg", "wb") as w_file:
         for line in r_file:
             w_file.write(line)
+
+datetime.now()

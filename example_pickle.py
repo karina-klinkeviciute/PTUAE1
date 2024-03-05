@@ -2,9 +2,11 @@ import pickle
 
 variable = 1000
 
+# writing a variable
 with open("pickle_out.pkl", "wb") as pickle_file:
     pickle.dump(variable, pickle_file)
 
+# reading a variable
 with open("pickle_out.pkl", "rb") as pickle_file:
     my_variable = pickle.load(pickle_file)
 
@@ -12,9 +14,11 @@ print(my_variable)
 
 zodynas = {1: "pirmas", 2: "antras", 3: "trecias"}
 
+# writing a dictionary
 with open("pickle_out.pkl", "wb") as pickle_file:
     pickle.dump(zodynas, pickle_file)
 
+# reading a dictionary
 with open("pickle_out.pkl", "rb") as pickle_file:
     zodynas = pickle.load(pickle_file)
 
@@ -24,11 +28,14 @@ variable1 = 1
 variable2 = 2
 variable3 = 3
 
+# writing separate variables
 with open("pickle_out.pkl", "wb") as pickle_file:
     pickle.dump(variable1, pickle_file)
     pickle.dump(variable2, pickle_file)
     pickle.dump(variable3, pickle_file)
 
+
+# reading separate variables in a loop
 with open("pickle_out.pkl", "rb") as pickle_file:
     for item in range(3):
         print(pickle.load(pickle_file))
@@ -79,9 +86,13 @@ class Car:
 
 cars = [Car("Toyota", "prius"), Car("Nissan", "Leaf"), Car("peugeot", "2008")]
 
+
+# writing object to a file
 with open("pickle_out.pkl", "wb") as pickle_file:
     pickle.dump(cars, pickle_file)
 
+
+# reading object from a file
 with open("pickle_out.pkl", "rb") as pickle_file:
     new_cars = pickle.load(pickle_file)
 

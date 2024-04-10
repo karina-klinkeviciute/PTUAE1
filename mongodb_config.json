@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": "27017",
+  "username": "test",
+  "password": "test",
+  "auth_source": "admin"
+}

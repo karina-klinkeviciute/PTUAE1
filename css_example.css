@@ -1,0 +1,90 @@
+header {
+    color: midnightblue;
+    background-color: aqua;
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+aside {
+    background-color: aquamarine;
+    border-color: green;
+    font-family: "Helvetica Neue", sans-serif;
+    font-style: italic;
+
+}
+
+section {
+    border: solid 2px cornflowerblue;
+    border-bottom-color: black;
+    border-top-style: dashed;
+    border-top-color: darkslategrey;
+}
+
+#logo {
+    border: solid 5px yellow;
+    padding: 20px;
+    margin: 30px;
+}
+
+aside {
+    height: 3em;
+    border: green;
+    font-size: 40px;
+    background-color: chocolate;
+    text-align: right;
+    color: aliceblue;
+    line-height: 1.6;
+    letter-spacing: 0.433em;
+    font-weight: 800;
+}
+
+main {
+    width: 1000px;
+    height: 1000px;
+}
+
+.my_class {
+    font-family: "Times New Roman", Times, serif;
+    border: solid 1px red;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: center;
+    text-transform: capitalize;
+    text-indent: 50px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
+    word-spacing: 0.5em;
+    text-shadow: green 2px 2px 3px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#wrapper {
+    margin: 50px;
+}
+
+.square {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.one {
+    background-color: darkblue;
+}
+
+.two {
+    background-color: darkgreen;
+}
+
+.three {
+    background-color: hotpink;
+}

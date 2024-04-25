@@ -24,6 +24,8 @@ import random
 # for item in x:
 #     print(item)
 
+i: str
+
 i = 1
 while i < 20:
     # pdb.set_trace()

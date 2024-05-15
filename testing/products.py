@@ -10,6 +10,12 @@ class Product:
     name: str
     price: float
 
+    def __post_init__(self):
+        for (name, field_type) in self.__annotations__.items():
+            if not isinstance(self.__dict__[name], field_type):
+                current_type = type(self.__dict__[name])
+                raise TypeError(f"The field `{name}` was assigned by `{current_type}` instead of `{field_type}`")
+
 
 class POSSystem:
     """
@@ -22,13 +28,12 @@ class POSSystem:
         # List to hold items in the current shopping cart
         self.current_cart = []
 
-    @classmethod
-    def get_all_products(cls) -> dict:
+    def get_all_products(self) -> dict:
         """
         Class method to retrieve a dictionary of all products.
         """
         # Return a copy to avoid modifying original data
-        return dict(cls().products)
+        return dict(self.products)
 
     def add_product(self, product_id: int, name: str, price: float) -> Product | None:
         """
@@ -67,13 +72,17 @@ class POSSystem:
         """
         if not self.current_cart:
             return "Error: Cart is empty."
+        if quantity <= 0:
+            return f"Error: Quantity should be positive"
         for i, (cart_id, cart_quantity) in enumerate(self.current_cart):
             if cart_id == product_id:
                 if quantity > cart_quantity:
                     return f"Error: Requested quantity ({quantity}) exceeds cart quantity ({cart_quantity})"
-                self.current_cart.pop(i)
                 if quantity < cart_quantity:
                     self.current_cart[i] = (cart_id, cart_quantity - quantity)
+                else:
+                    self.current_cart.pop(i)
+
                 return "Product removed from cart successfully."
         return f"Error: Product ID {product_id} not found in cart."
 

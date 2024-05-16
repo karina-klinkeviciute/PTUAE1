@@ -9,3 +9,10 @@ class OrderProcessor:
         self._processed_orders.append(item_name)
         total_price = quantity * unit_price
         return total_price
+
+
+def write_log_message():
+    with open("loga.txt", "w") as file:
+        file.write("ok")
+
+write_log_message()
